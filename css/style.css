@@ -12,6 +12,31 @@
 
 }
 
+
+@font-face {
+    font-family: "FjallaOne";
+    src: url(../css/fonts/FjallaOne-Regular.ttf) format('truetype') ;
+
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: "icons";
+    src: url(../css/fonts/websymbols-regular-webfont.svg#WebSymbolsRegular)format('svg');
+    src: url(../css/fonts/websymbols-regular-webfont.eot?#iefix) format('embedded-opentype'),
+        url(../css/fonts/websymbols-regular-webfont.woff) format('woff'),
+        url(../css/fonts/websymbols-regular-webfont.ttf) format('truetype');
+
+        font-weight: normal;
+        font-style: normal;
+
+}
+
+
+
 /* general styles */
 * {
     padding: 0px;
@@ -165,7 +190,7 @@ body {
 
 /* sidebar */
 #aside ,#phrase {
-    clear: both;
+   
     width: 200px;
 
     float: left;
@@ -178,7 +203,7 @@ body {
 
 }
 #phrase {
-
+ 
     width: 180px;
     padding: 10px;
     font-size: 14px;
@@ -280,3 +305,71 @@ input[type="password"],label{
 
 }
 
+/* sections */
+
+#sections{
+    float: right;
+    width: 75%;
+    font-family: sans-serif;
+    margin-right: 20px;
+}
+
+#sections .title{
+    font-family: "FjallaOne";
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c9c9c9;
+    text-transform: uppercase;
+    margin-top: -20px;
+}
+
+#sections  section{
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 4px #c9c9c9;
+    color: #333333;
+    font-size: 16px;
+    overflow: hidden;
+
+}
+
+#sections .article{
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+}
+
+#sections .article .date{
+    color: gray;
+    font-size: 14px;
+    
+}
+
+#sections .sticker-1 ,.sticker-2{
+    position: absolute;
+    margin-top: -38px;
+    z-index: 0;
+}
+
+#sections .sticker-2{
+    margin-left: 860px;
+}
+
+/* #sections .sticker-2{
+    position: absolute;
+} */
+
+.icon{
+    font-family: "icons";
+    float: left;
+    margin-right: 5px;
+    margin-top: -2px;
+}
