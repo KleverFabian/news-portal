@@ -373,3 +373,26 @@ input[type="password"],label{
     margin-right: 5px;
     margin-top: -2px;
 }
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+#history{
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+footer{
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    color: white;
+    background-color: #333333;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-family: sans-serif;
+    font-size: 14px;
+}
