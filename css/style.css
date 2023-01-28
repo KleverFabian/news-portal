@@ -17,7 +17,14 @@
     padding: 0px;
     margin: 0px;
 }
+.widget-link{
+    color: #529125;
+    text-decoration: none;
 
+}
+.widget-link:hover{
+    color: #2b4d13;
+}
 body {
     background-image: url(../img/paven.png);
 }
@@ -82,18 +89,19 @@ body {
     width: 1130px;
 }
 
-.nav > .nav-list > .nav-item{
+.nav>.nav-list>.nav-item {
     line-height: 40px;
     float: left;
     border-right: 1px solid gray;
     transition: all 300ms;
 
 }
-.nav > .nav-list > .nav-item:first-child{
+
+.nav>.nav-list>.nav-item:first-child {
     border-left: 1px solid gray;
 }
 
-.nav > .nav-list > .nav-item > .nav-link{
+.nav>.nav-list>.nav-item>.nav-link {
     display: block;
     color: white;
     text-decoration: none;
@@ -101,14 +109,14 @@ body {
     padding-right: 20px;
 }
 
-.nav > .nav-list > .nav-item:hover{
+.nav>.nav-list>.nav-item:hover {
     background-color: #70b231;
     box-shadow: 0px 0px 4px green inset;
-    
+
 }
 
 /* dropdown menu */
-.nav > .nav-list > .nav-item > .nav-list{
+.nav>.nav-list>.nav-item>.nav-list {
     display: none;
     position: absolute;
     color: white;
@@ -116,31 +124,159 @@ body {
     width: 160px;
     box-shadow: 0px 2px 2px gray;
     z-index: 1;
-   
+
 }
-.nav > .nav-list > .nav-item > .nav-list > .nav-item{
+
+.nav>.nav-list>.nav-item>.nav-list>.nav-item {
     background-color: #f2f1f0;
     border-bottom: 1px solid #d6d6d6;
-    
+
     line-height: 25px;
     font-size: 13px;
     transition: all 300ms;
-   
-}
-.nav > .nav-list > .nav-item > .nav-list > .nav-item:hover{
-    /* box-shadow: 0px 0px 6px #cccc inset; */
-    background-color:#cccc  ;
+
 }
 
-.nav > .nav-list > .nav-item > .nav-list > .nav-item >.nav-link{
+.nav>.nav-list>.nav-item>.nav-list>.nav-item:hover {
+    /* box-shadow: 0px 0px 6px #cccc inset; */
+    background-color: #cccc;
+}
+
+.nav>.nav-list>.nav-item>.nav-list>.nav-item>.nav-link {
     text-decoration: none;
     color: #333333;
     padding: 8px;
     display: block;
-   
+
 
 }
-.nav > .nav-list > .nav-item:hover .nav-list{
+
+.nav>.nav-list>.nav-item:hover .nav-list {
     display: block;
+}
+
+/* <!-- styles of core content --> */
+
+#main {
+    width: 1250px;
+    min-height: 1100px;
+    margin: 0px auto;
+}
+
+/* sidebar */
+#aside ,#phrase {
+    clear: both;
+    width: 200px;
+
+    float: left;
+    margin: 30px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px #ccc;
+    font-family: sans-serif;
+
+
+}
+#phrase {
+
+    width: 180px;
+    padding: 10px;
+    font-size: 14px;
+    
+    
+}
+#aside .widget {
+    display: block;
+    width: 180px;
+    margin: 5px auto;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    border-bottom: 1px dashed #333333;
+
+}
+
+#aside .widget:last-child {
+    border-bottom: none;
+    margin-bottom: 20px;
+}
+
+#aside .widget .widget-text {
+    color: #333333;
+    width: 100%;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: #f2f3f2;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+#aside .widget .widget-form input[type="text"],
+input[type="password"] {
+    border: 1px solid #c9c9c9;
+    box-shadow: 0px 0px 2px inset;
+    background-color: white;
+    padding: 2px;
+    padding-top: 2px;
+    color: gray;
+    transition: all 300ms;
+    outline: none;
+}
+
+#aside .widget .widget-form input[type="text"]:focus,
+input[type="password"]:focus {
+    border: 1px solid #70b231;
+    color: black;
+
+}
+
+#aside .widget .widget-form input[type="submit"]{
+    display: block;
+    border-radius: 2px;
+    width: 60px;
+    padding: 3px;
+    background-color: #70b231;
+    border: 1px solid green;
+    cursor: pointer;
+    color: white;
+}
+
+#aside .widget .widget-form input[type="submit"]:hover{
+    box-shadow: 0px 0px  2px gray ;
+
+}
+
+#aside .widget .widget-form input[type="submit"]:active{
+    box-shadow: 0px 0px  3px gray inset;
+    text-shadow: 0px 0px 1px #cccc;
+}
+
+
+#aside .widget  .widget-form input[type="text"],
+input[type="password"],label{
+    display: block;
+    width: 95%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#aside .widget  .widget-form input[type="submit"]{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+#aside .widget  .widget-list{
+ list-style: square;
+}
+
+#aside .widget  .widget-item{
+    margin-top: 8px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+
 }
 
