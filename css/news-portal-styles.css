@@ -1,0 +1,96 @@
+/* general styles */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#main {
+    width: 100%;
+    font-family: sans-serif;
+    background-color: #007155;
+}
+
+#aside,
+#main-section {
+
+    height: auto;
+    float: left;
+
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+/* styles aside */
+#aside {
+    width: 270px;
+    
+}
+
+#aside .container {
+    width: 85%;
+    height: 100%;
+    margin: 0px auto;
+
+}
+
+#aside .container .logo {
+    width: 146px;
+    height: 146px;
+    margin-top: 58px;
+    margin-left: 59px;
+    border-radius: 193px;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+}
+
+#aside .container .logo img {
+    width: 146px;
+    margin-top: 20px;
+}
+
+
+#main-section {
+    width: 70%;
+    background-color: red;
+
+}
+
+.nav {
+ 
+    margin-top: 20px;
+    margin: 0px auto;
+}
+
+.nav .nav-list {
+    list-style: none;
+}
+
+.nav .nav-list .nav-item {
+    line-height: 40px;
+    transition: all 300ms;
+}
+
+.nav .nav-list .nav-item .nav-link {
+    display: block;
+    padding: 5px;
+
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+
+}
+
+.nav .nav-list .nav-item .icon {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav .nav-list .nav-item:hover {
+    background-color: #008161;
+    border-radius: 5px;
+    text-shadow: 0px 2px 1px #333333;
+}
