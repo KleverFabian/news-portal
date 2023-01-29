@@ -11,3 +11,5 @@ The project is part of the web design course by Victor Robles
 ![Web page design](https://github.com/KleverFabian/news-portal/blob/master/img/design.png?raw=true)
 
 ## Another design to apply the knowledge of the course
+![Web page design](https://github.com/KleverFabian/news-portal/blob/master/img/news_portal.PNG?raw=true)
+
